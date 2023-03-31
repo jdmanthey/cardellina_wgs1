@@ -12,7 +12,7 @@ module load intel java bwa samtools singularity
 export SINGULARITY_CACHEDIR="/lustre/work/jmanthey/singularity-cachedir"
 
 # define main working directory
-workdir=/lustre/scratch/jmanthey/19_mexico/cardellina
+workdir=/lustre/scratch/jmanthey/21_cardellina
 
 basename_array=$( head -n${SLURM_ARRAY_TASK_ID} ${workdir}/basenames.txt | tail -n1 )
 
